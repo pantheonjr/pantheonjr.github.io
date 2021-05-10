@@ -1,0 +1,25 @@
+.backLinear {
+    background: linear-gradient(-45deg, #42033D, #680E4B, #23a6d5, #854798);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.amostra {
+    height: 80vh;
+}
+
+buttonEffect:hover {
+    color: transparent;
+}
