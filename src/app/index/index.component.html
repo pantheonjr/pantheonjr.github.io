@@ -1,0 +1,103 @@
+<div class="backLinear">
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                PantheonJr
+            </a>
+                <button class="navbar-toggler" type="button" (click)="basicNavbar.toggle()" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars">but</i>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" mdbCollapse #basicNavbar="mdbCollapse">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active buttonEffect" aria-current="page" href="#who">Quem Somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link buttonEffect" href="#when">Integrantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link buttonEffect" href="#contact" tabindex="-1" aria-disabled="true">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="amostra w-100 d-flex align-items-center justify-content-center text-dark">
+            <h1>Pantheon Junior</h1>
+        </section>
+    </div>
+    <div class="container bg-light rounded">
+
+        <section id="who" class="pt-5">
+            <h2 class="w-100 text-center mb-2">Quem Somos?</h2>
+            <div class="card mb-5 shadow-0 p-3">
+                <div class="row g-0">
+                    <div class="col-md-4 mt-auto mb-auto">
+                        <img src="https://static.vakinha.com.br/uploads/vakinha/image/481590/tenor.gif?ims=700x410" alt="..." class="img-fluid" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <div class="card-header">no penis</div>
+                            <p class="card-text">
+                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                            <p class="card-text">
+                                <small class="">Last updated 3 mins ago</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-end">
+                <div class="card mb-5 shadow-0 p-3 w-100">
+                    <div class="row g-0">
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="card-header">no penis</div>
+                                <p class="card-text">
+                                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                </p>
+                                <p class="card-text">
+                                    <small class="">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-auto mb-auto">
+                            <img src="https://static.vakinha.com.br/uploads/vakinha/image/481590/tenor.gif?ims=700x410" alt="..." class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="when">
+
+            <h2 class="w-100 text-center mb-2">Integrantes</h2>
+
+            <div class="row justify-content-center">
+                <div *ngFor="let person of persons" class="col-xs-12 col-md-3 justify-content-center text-center">
+                    <img class="rounded-circle" width="200px" height="200px" src={{person.photoUrl}} alt="">
+                    <h6>{{person.name}}</h6>
+                    <p class="text-center p-4">{{person.desc}}</p>
+                </div>
+
+            </div>
+
+        </section>
+        <section id="contact">
+            Contato
+        </section>
+    </div>
+
+
+    <footer class="bg-dark text-center text-lg-start text-light">
+        <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2); ">
+            © {{year}} Copyright:
+            <a class="text-primary" href="https://pantheonjr.github.io/ ">Pantheon Jr</a>
+        </div>
+    </footer>
+</div>
